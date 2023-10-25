@@ -33,16 +33,16 @@ const About = () => {
             className='flex-1'
           >
             <h2 className='h2 text-accent'>About me.</h2>
-            <h3 className='h3 mb-4'>I'm a freelance Front-end developer with over 5 years of experience. </h3>
-            <p className='mb-6'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua.
+            <h3 className='h3 mb-4'>I'm a web developer with MERN Stack Technologies having following skills: </h3>
+            <p className='mb-6'>React | Node | Express | MongoDB | MqSQL | HTML | CSS | Bootstrap | Media Queries |
+             Tailwind CSS | Hooks | Redux | JavaScript | Firebase | GCP | Python 
             </p>
             {/* stats */}
             <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
               <div>
                 <div className='text-[40px] font-tertiary text-gradient mb-2'>
                   {inView
-                    ? <CountUp start={0} end={3} duration={3} />
+                    ? <CountUp start={0} end={1} duration={10} />
                     : null
                   }
                 </div>
@@ -54,10 +54,10 @@ const About = () => {
               <div>
                 <div className='text-[40px] font-tertiary text-gradient mb-2'>
                   {inView
-                    ? <CountUp start={0} end={3} duration={3} />
+                    ? <CountUp start={0} end={4} duration={5} />
                     : null
                   }
-                  k+
+                  {/* k+ */}
                 </div>
                 <div className='font-primary text-sm tracking-[2px]'>
                   Project <br />
@@ -67,10 +67,10 @@ const About = () => {
               <div>
                 <div className='text-[40px] font-tertiary text-gradient mb-2'>
                   {inView
-                    ? <CountUp start={0} end={3} duration={3} />
+                    ? <CountUp start={0} end={1} duration={10} />
                     : null
                   }
-                  k+
+                  {/* k+ */}
                 </div>
                 <div className='font-primary text-sm tracking-[2px]'>
                   Satisfied <br />
@@ -78,7 +78,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className='flex gap-x-8 items-center'>
+            <div className='flex gap-x-8 justify-end items-center'>
               <button className='btn btn-lg'>Contact me</button>
               <a href="#" className='text-gradient btn-link'>
                 My Portfolio
