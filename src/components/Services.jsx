@@ -9,23 +9,26 @@ import { fadeIn } from '../variants';
 // services data
 const services = [
   {
-    name: 'UI/UX Design',
+    name: 'REACT',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, cumque error libero ipsa, dicta dolorem laudantium quas eligendi laborum optio laboriosam ea quisquam.',
+      `As a React developer, I specialize in building elegant and functional user interfaces that transform 
+      ideas into interactive reality. Also, done API integration.`,
     link: 'learn more',
   },
   {
-    name: 'Development',
+    name: 'MERN',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, cumque error libero ipsa, dicta dolorem laudantium quas eligendi laborum optio laboriosam ea quisquam.',
+      `As a MERN developer, I harness the power of the MERN stack to craft robust and 
+      scalable web applications. From database design to front-end user interfaces, I'm dedicated to delivering full-stack
+      solutions that elevate businesses.`,
     link: 'learn more',
   },
-  {
-    name: 'React',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, cumque error libero ipsa, dicta dolorem laudantium quas eligendi laborum optio laboriosam ea quisquam.',
-    link: 'learn more',
-  },
+  // {
+  //   name: 'UI/UX',
+  //   description:
+  //     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, cumque error libero ipsa, dicta dolorem laudantium quas eligendi laborum optio laboriosam ea quisquam.',
+  //   link: 'learn more',
+  // },
 ]
 
 const Services = () => {
@@ -43,7 +46,7 @@ const Services = () => {
             className='flex-1 lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0'>
             <h2 className='h2 text-accent mb-6'>What I do.</h2>
             <h3 className='h3 max-w-[455px] mb-16'>
-              I'm a freelance Front-end developer with over 5 years of experience.
+              I'm a web developer with MERN Stack Technologies, my services includes: 
             </h3>
             <button className='btn btn-sm'>
               See my work
@@ -66,16 +69,16 @@ const Services = () => {
                     className='border-b border-white/20 h-[146px] mb-[38px] flex'
                     key={index}
                   >
-                    <div className='max-w-[476px]'>
+                    <div className='max-w-[600px]'>
                       <h4 className='text-[20px] tracking-wider font-primary font-semibold mb-6'>{name}</h4>
                       <p className='font-secondary leading-tight'>{description}</p>
                     </div>
-                    <div className='flex flex-col flex-1 items-end'>
+                    {/* <div className='flex flex-col flex-1 items-end'>
                       <a href='#' className='btn w-9 h-9 mb-[42px] flex justify-center items-center'>
                         <BsArrowUpRight />
                       </a>
                       <a href='#' className='text-gradient text-sm'>{link}</a>
-                    </div>
+                    </div> */}
                   </div>
                 )
               })
