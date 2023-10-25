@@ -36,12 +36,12 @@ const Banner = () => {
               initial="hidden"
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
-              className='mb-6 text-[32px] lg:text-[50px] font-secondary font-semibold uppercase leading-[1]'>
+              className='mb-6 text-[32px] lg:text-[44px] font-secondary font-semibold uppercase leading-[1]'>
               <span className='text-white mr-4'>I am a</span>
               <TypeAnimation sequence={[
-                'Developer',
+                'React Developer',
                 2000,
-                'Designer',
+                'MERN Developer',
                 2000,
               ]}
                 speed={50}
@@ -55,11 +55,12 @@ const Banner = () => {
               initial="hidden"
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
-              className='mb-8 max-w-lg mx-auto lg:mx-0'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+              className='mb-5 max-w-lg mx-auto lg:mx-0'>
+               I'm a dedicated React front-end developer with a passion for crafting interactive and user-friendly websites. 
+               Welcome to my portfolio where ideas come to life in pixels and code.
             </motion.p>
-            <motion.div
+
+            {/* <motion.div
               variants={fadeIn('up', 0.6)}
               initial="hidden"
               whileInView={'show'}
@@ -67,18 +68,19 @@ const Banner = () => {
               className='flex items-center gap-x-6 max-w-max mx-auto lg:mx-0 mb-12'>
               <button className='btn btn-lg'>Contact me</button>
               <a href='#' className='text-gradient btn-link'>My Portfolio</a>
-            </motion.div>
+            </motion.div> */}
+
             {/* socials */}
             <motion.div
               variants={fadeIn('up', 0.7)}
               initial="hidden"
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
-              className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
-              <a href='#'>
+              className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0 mb-5'>
+              <a href="https://github.com/umer-shehzad/">
                 <FaGithub />
               </a>
-              <a href='#'>
+              <a href="https://www.linkedin.com/in/umer-shehzad/">
                 <FaLinkedinIn />
               </a>
             </motion.div>
