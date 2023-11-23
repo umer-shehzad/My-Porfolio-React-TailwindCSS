@@ -3,6 +3,9 @@ import React from 'react'
 import { motion } from 'framer-motion';
 // variant
 import { fadeIn } from '../variants';
+// icons
+import { MdEmail } from "react-icons/md";
+import { FaPhoneSquareAlt } from "react-icons/fa";
 
 const Contact = () => {
   return (
@@ -10,12 +13,12 @@ const Contact = () => {
       <div className="container mx-auto">
         <div className='flex flex-col lg:flex-row'>
           {/* text */}
-          <motion.div 
-          variants={fadeIn('right', 0.3)}
-          initial="hidden"
-          whileInView={'show'}
-          viewport={{ once: false, amount: 0.3 }}
-          className='flex-1'>
+          <motion.div
+            variants={fadeIn('right', 0.3)}
+            initial="hidden"
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.3 }}
+            className='flex-1'>
             <h4 className='text-xl uppercase text-accent font-medium mb-2 tracking-wide'>
               Get in touch
             </h4>
@@ -24,13 +27,27 @@ const Contact = () => {
             </h2>
           </motion.div>
           {/* form */}
-          <motion.div 
-          variants={fadeIn('left', 0.2)}
-          initial="hidden"
-          whileInView={'show'}
-          viewport={{ once: false, amount: 0.3 }}
-          className='flex-1'>
-            Contact
+          <motion.div
+            variants={fadeIn('left', 0.2)}
+            initial="hidden"
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.3 }}
+            className='flex-1'>
+            Contact me via
+            {/* email */}
+            <div className='flex items-center gap-6 '>
+              <MdEmail />
+              <span className='text-accent font-medium tracking-wide'>
+                umer.work.96@gmail.com
+              </span>
+            </div>
+            {/* Phone Number */}
+            <div className='flex items-center gap-6'>
+              <FaPhoneSquareAlt />
+              <span className='text-accent font-medium tracking-wide'>
+                +92 315 7858775
+              </span>
+            </div>
           </motion.div>
         </div>
       </div>
