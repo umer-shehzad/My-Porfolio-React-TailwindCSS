@@ -56,7 +56,7 @@ const Banner = () => {
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
               className='mb-5 max-w-lg mx-auto lg:mx-0'>
-               I'm a dedicated React front-end developer with a passion for crafting interactive and user-friendly websites. 
+               I'm a dedicated Web Developer with a passion for crafting interactive and user-friendly websites. 
                Welcome to my portfolio where ideas come to life in pixels and code.
             </motion.p>
 
