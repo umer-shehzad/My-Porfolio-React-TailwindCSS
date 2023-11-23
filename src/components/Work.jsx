@@ -56,7 +56,7 @@ const Work = () => {
               <div
                 className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-700 z-50'
               >
-                <span className='text-3xl text-white'>
+                <span className='text-2xl text-white'>
                   Oqvic Flood
                 </span>
               </div>
@@ -110,7 +110,7 @@ const Work = () => {
               <div
                 className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-700 z-50'
               >
-                <span className='text-3xl text-white'>Exercise Tracker</span>
+                <span className='text-2xl text-white'>Exercise Tracker</span>
               </div>
               {/* Links */}
               <div
@@ -154,7 +154,7 @@ const Work = () => {
               <div
                 className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-700 z-50'
               >
-                <span className='text-3xl text-white'>Ecommerce Dashboard</span>
+                <span className='text-white text-2xl'>Ecommerce Dashboard</span>
               </div>
               {/* Links */}
               <div

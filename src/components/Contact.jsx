@@ -32,7 +32,7 @@ const Contact = () => {
             initial="hidden"
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}
-            className='flex-1'>
+            className='flex-1 mb-32'>
             Contact me via
             {/* email */}
             <div className='flex items-center gap-6 '>

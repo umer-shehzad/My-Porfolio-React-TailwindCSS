@@ -75,7 +75,7 @@ const Services = () => {
                 const { name, description, link } = service;
                 return (
                   <div
-                    className='border-b border-white/20 h-[146px] mb-[38px] flex'
+                    className='border-b border-white/20 h-auto mb-[38px] flex gap-10'
                     key={index}
                   >
                     <div className='max-w-[600px]'>
