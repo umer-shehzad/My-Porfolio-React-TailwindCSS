@@ -7,6 +7,8 @@ import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 // variant
 import { fadeIn } from '../variants';
+// link
+import { Link } from 'react-scroll';
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -35,7 +37,7 @@ const About = () => {
             <h2 className='h2 text-accent'>About me.</h2>
             <h3 className='h3 mb-4'>I'm a web developer with MERN Stack Technologies having following skills: </h3>
             <p className='mb-6'>React | Node | Express | MongoDB | MqSQL | HTML | CSS | Bootstrap | Media Queries |
-             Tailwind CSS | Hooks | Redux | JavaScript | Firebase | GCP | Python 
+              Tailwind CSS | Hooks | Redux | JavaScript | Firebase | GCP | Python
             </p>
             {/* stats */}
             <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
@@ -79,10 +81,19 @@ const About = () => {
               </div>
             </div>
             <div className='flex gap-x-8 justify-end items-center'>
-              <button className='btn btn-lg'>Contact me</button>
-              <a href="#" className='text-gradient btn-link'>
+              <Link
+                to='contact'
+                activeClass='active'
+                smooth={true}
+                spy={true}
+              >
+                <button className='btn btn-lg'>
+                  Contact me
+                </button>
+              </Link>
+              {/* <a href="#" className='text-gradient btn-link'>
                 My Portfolio
-              </a>
+              </a> */}
             </div>
           </motion.div>
         </div>
