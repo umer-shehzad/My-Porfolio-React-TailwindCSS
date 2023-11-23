@@ -5,6 +5,8 @@ import { BsArrowUpRight } from 'react-icons/bs';
 import { motion } from 'framer-motion';
 // variants
 import { fadeIn } from '../variants';
+// link
+import { Link } from 'react-scroll';
 
 // services data
 const services = [
@@ -46,11 +48,18 @@ const Services = () => {
             className='flex-1 lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0'>
             <h2 className='h2 text-accent mb-6'>What I do.</h2>
             <h3 className='h3 max-w-[455px] mb-16'>
-              I'm a web developer with MERN Stack Technologies, my services includes: 
+              I'm a web developer with MERN Stack Technologies, my services includes:
             </h3>
-            <button className='btn btn-sm'>
-              See my work
-            </button>
+            <Link
+              to='work'
+              activeClass='active'
+              smooth={true}
+              spy={true}
+            >
+              <button className='btn btn-sm'>
+                See my work
+              </button>
+            </Link>
           </motion.div>
           {/* services */}
           <motion.div
