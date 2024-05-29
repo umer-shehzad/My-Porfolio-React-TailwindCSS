@@ -11,26 +11,20 @@ import { Link } from 'react-scroll';
 // services data
 const services = [
   {
-    name: 'REACT',
+    name: 'REACT JS',
     description:
       `As a React developer, I specialize in building elegant and functional user interfaces that transform 
-      ideas into interactive reality. Also, done API integration.`,
+      ideas into interactive reality.`,
     link: 'learn more',
   },
   {
-    name: 'MERN',
+    name: 'NEXT JS',
     description:
-      `As a MERN developer, I harness the power of the MERN stack to craft robust and 
-      scalable web applications. From database design to front-end user interfaces, I'm dedicated to delivering full-stack
-      solutions that elevate businesses.`,
+      `As a NEXT developer, I specialize in building fast, scalable, and SEO-friendly web applications.
+      Leveraging the power of server-side rendering and static site generation, 
+      I deliver high-performance websites that provide an exceptional user experience.`,
     link: 'learn more',
   },
-  // {
-  //   name: 'UI/UX',
-  //   description:
-  //     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, cumque error libero ipsa, dicta dolorem laudantium quas eligendi laborum optio laboriosam ea quisquam.',
-  //   link: 'learn more',
-  // },
 ]
 
 const Services = () => {
@@ -47,8 +41,8 @@ const Services = () => {
             // className='flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0'>
             className='flex-1 lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0'>
             <h2 className='h2 text-accent mb-6'>What I do.</h2>
-            <h3 className='h3 max-w-[455px] mb-16'>
-              I'm a web developer with MERN Stack Technologies, my services includes:
+            <h3 className='h3 max-w-[455px] mb-8'>
+              I'm a web developer with Front-end Technologies, my services includes:
             </h3>
             <Link
               to='work'
@@ -75,11 +69,11 @@ const Services = () => {
                 const { name, description, link } = service;
                 return (
                   <div
-                    className='border-b border-white/20 h-auto mb-[38px] flex gap-10'
+                    className='border-b border-white/20 pb-2 h-auto mb-[38px] flex gap-10'
                     key={index}
                   >
                     <div className='max-w-[600px]'>
-                      <h4 className='text-[20px] tracking-wider font-primary font-semibold mb-6'>{name}</h4>
+                      <h4 className='text-[20px] tracking-wider font-primary font-semibold mb-5'>{name}</h4>
                       <p className='font-secondary leading-tight'>{description}</p>
                     </div>
                     {/* <div className='flex flex-col flex-1 items-end'>
