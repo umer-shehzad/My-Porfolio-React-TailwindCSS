@@ -41,7 +41,7 @@ const Banner = () => {
               <TypeAnimation sequence={[
                 'React Developer',
                 2000,
-                'MERN Developer',
+                'NEXT Developer',
                 2000,
               ]}
                 speed={50}
