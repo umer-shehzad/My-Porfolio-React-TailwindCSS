@@ -35,9 +35,10 @@ const About = () => {
             className='flex-1'
           >
             <h2 className='h2 text-accent'>About me.</h2>
-            <h3 className='h3 mb-4'>I'm a web developer with MERN Stack Technologies having following skills: </h3>
-            <p className='mb-6'>React | Node | Express | MongoDB | MqSQL | HTML | CSS | Bootstrap | Media Queries |
-              Tailwind CSS | Hooks | Redux | JavaScript | Firebase | GCP | Python
+            <h3 className='h3 mb-4'>I'm a Front-end developer skilled in: </h3>
+            <p className='mb-6'>React | NEXT | Hooks | Redux | MUI | Bootstrap | Tailwind | Responsive Design | 
+            API Integration | Vercel | Firebase | HTML | CSS | JavaScript | Node | Express | MongoDB | MqSQL 
+            | GCP | Python  
             </p>
             {/* stats */}
             <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
@@ -56,7 +57,7 @@ const About = () => {
               <div>
                 <div className='text-[40px] font-tertiary text-gradient mb-2'>
                   {inView
-                    ? <CountUp start={0} end={4} duration={5} />
+                    ? <CountUp start={0} end={9} duration={5} />
                     : null
                   }
                   {/* k+ */}
@@ -69,7 +70,7 @@ const About = () => {
               <div>
                 <div className='text-[40px] font-tertiary text-gradient mb-2'>
                   {inView
-                    ? <CountUp start={0} end={1} duration={10} />
+                    ? <CountUp start={0} end={2} duration={10} />
                     : null
                   }
                   {/* k+ */}
