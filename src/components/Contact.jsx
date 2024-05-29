@@ -7,10 +7,13 @@ import { fadeIn } from '../variants';
 import { MdEmail } from "react-icons/md";
 import { FaPhoneSquareAlt } from "react-icons/fa";
 
+import GmailIcon from '../assets/icons8-gmail.svg';
+import LinkedInIcon from '../assets/icons8-linkedin.svg';
+
 const Contact = () => {
   return (
-    <section className='py-16 lg:section' id='contact'>
-      <div className="container mx-auto">
+    <section className='py-16 min-h-[100vh] lg:section' id='contact'>
+      <div className="container ml-20 mt-20 lg:mx-auto">
         <div className='flex flex-col lg:flex-row'>
           {/* text */}
           <motion.div
@@ -33,18 +36,23 @@ const Contact = () => {
             whileInView={'show'}
             viewport={{ once: false, amount: 0.3 }}
             className='flex-1 mb-32'>
-            Contact me via
+            <p className='text-3xl mb-8'>Contact me via</p>
             {/* email */}
-            <div className='flex items-center gap-6 '>
+            <div className='flex items-center gap-6 mb-2'>
               <MdEmail />
-              <span className='text-accent font-medium tracking-wide'>
-                umer.work.96@gmail.com
-              </span>
+              <div className='flex gap-3'>
+                <a href="mailto:umer.work.96@gmail.com" className="text-accent font-medium tracking-wide">
+                  <img src={GmailIcon} alt="Gmail Icon" className="inline-block w-9 h-9" />
+                </a>
+                <a href="https://www.linkedin.com/in/umer-shehzad/">
+                  <img src={LinkedInIcon} alt="Gmail Icon" className="inline-block w-9 h-9" />
+                </a>
+              </div>
             </div>
             {/* Phone Number */}
             <div className='flex items-center gap-6'>
               <FaPhoneSquareAlt />
-              <span className='text-accent font-medium tracking-wide'>
+              <span className='text-accent font-semibold tracking-wide'>
                 +92 315 7858775
               </span>
             </div>
