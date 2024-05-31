@@ -1,11 +1,7 @@
 import { useState } from 'react';
-import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
+import { BsArrowLeft, BsArrowRight, BsArrowUpRight } from 'react-icons/bs';
 import { motion } from 'framer-motion';
-// icon
-import { BsArrowUpRight } from 'react-icons/bs';
-// variant
 import { fadeIn } from '../variants';
-
 import { projects } from '../constants/ProjectsData';
 
 const Projects = () => {
@@ -31,12 +27,12 @@ const Projects = () => {
             viewport={{ once: false, amount: 0.3 }}
             className='flex-1 flex flex-col gap-y-12'
         >
-            <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl mt-4'>
+            <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl mt-4 w-full lg:w-[700px] h-[260px] lg:h-[350px]'>
                 {/* overlay */}
                 <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
                 {/* img */}
                 <img
-                    className='group-hover:scale-125 transition-all duration-500'
+                    className='group-hover:scale-125 transition-all duration-500 w-full h-full object-cover'
                     src={projects[currentPage].img} alt={projects[currentPage].title}
                 />
                 {/* pretitle */}
@@ -71,7 +67,7 @@ const Projects = () => {
                         )}
                         {/* Live Link */}
                         {projects[currentPage].liveLink && (
-                            < a
+                            <a
                                 href={projects[currentPage].liveLink}
                                 target='_blank'
                                 className='btn w-9 h-9 flex justify-center items-center'
@@ -82,22 +78,22 @@ const Projects = () => {
                     </span>
                 </div>
                 {/* Pagination Buttons */}
-                <div className="absolute top-1/2 left-4 transform -translate-y-1/2 z-50">
+                <div className="absolute top-1/2 left-2 lg:left-4 transform -translate-y-1/2 z-50">
                     <button
                         onClick={handlePrev}
                         disabled={currentPage === 0}
-                        className={`btn ${currentPage === 0 ? 'opacity-50 cursor-not-allowed' : ''}`}
+                        className={`btn p-1 lg:p-2 ${currentPage === 0 ? 'opacity-50 cursor-not-allowed' : ''}`}
                     >
-                        <BsArrowLeft className="text-2xl text-white" />
+                        <BsArrowLeft className="text-2xl lg:text-3xl text-white" />
                     </button>
                 </div>
-                <div className="absolute top-1/2 right-4 transform -translate-y-1/2 z-50">
+                <div className="absolute top-1/2 right-2 lg:right-4 transform -translate-y-1/2 z-50">
                     <button
                         onClick={handleNext}
                         disabled={currentPage === projects.length - 1}
-                        className={`btn ${currentPage === projects.length - 1 ? 'opacity-50 cursor-not-allowed' : ''}`}
+                        className={`btn p-1 lg:p-2 ${currentPage === projects.length - 1 ? 'opacity-50 cursor-not-allowed' : ''}`}
                     >
-                        <BsArrowRight className="text-2xl text-white" />
+                        <BsArrowRight className="text-2xl lg:text-3xl text-white" />
                     </button>
                 </div>
             </div >
