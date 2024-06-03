@@ -34,6 +34,7 @@ const Projects = () => {
                 <img
                     className='group-hover:scale-125 transition-all duration-500 w-full h-full object-cover'
                     src={projects[currentPage].img} alt={projects[currentPage].title}
+                    loading="lazy"
                 />
                 {/* pretitle */}
                 <div
