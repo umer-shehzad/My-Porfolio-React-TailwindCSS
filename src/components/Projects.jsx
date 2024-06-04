@@ -1,5 +1,8 @@
 import { useState } from 'react';
 import { BsArrowLeft, BsArrowRight, BsArrowUpRight } from 'react-icons/bs';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+import { FaSpinner } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 import { projects } from '../constants/ProjectsData';
@@ -31,10 +34,16 @@ const Projects = () => {
                 {/* overlay */}
                 <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
                 {/* img */}
-                <img
-                    className='group-hover:scale-125 transition-all duration-500 w-full h-full object-cover'
-                    src={projects[currentPage].img} alt={projects[currentPage].title}
-                    loading="lazy"
+                <LazyLoadImage
+                    className='group-hover:scale-125 transition-all duration-500 w-full lg:w-[700px] h-[260px] lg:h-[350px] object-fill'
+                    alt={projects[currentPage].title}
+                    src={projects[currentPage].img}
+                    effect="blur"
+                    placeholder={
+                        <div className='flex items-center justify-center w-full h-full absolute top-0 left-0 bg-black/70 text-white z-50'>
+                            <FaSpinner className="animate-spin text-4xl" />
+                        </div>
+                    }
                 />
                 {/* pretitle */}
                 <div
@@ -57,14 +66,14 @@ const Projects = () => {
                     <span className='flex gap-6 mb-[32px]'>
                         {/* Github Link */}
                         {projects[currentPage].githubLink && (
-                        <a
-                            href={projects[currentPage].githubLink}
-                            target='_blank'
-                            className='text-gradient text-md flex justify-center mt-2'
-                            rel='noopener noreferrer'
-                        >
-                            learn more
-                        </a>
+                            <a
+                                href={projects[currentPage].githubLink}
+                                target='_blank'
+                                className='text-gradient text-md flex justify-center mt-2'
+                                rel='noopener noreferrer'
+                            >
+                                learn more
+                            </a>
                         )}
                         {/* Live Link */}
                         {projects[currentPage].liveLink && (
