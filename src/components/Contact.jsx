@@ -5,12 +5,16 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
 // icons
 import { MdEmail } from "react-icons/md";
-import { FaPhoneSquareAlt } from "react-icons/fa";
+import { FaPhoneSquareAlt, FaWhatsapp } from "react-icons/fa";
 
 import GmailIcon from '../assets/icons8-gmail.svg';
 import LinkedInIcon from '../assets/icons8-linkedin.svg';
 
 const Contact = () => {
+  const phoneNumber = "+92 315 7858775";
+  
+  const whatsappUrl = `https://wa.me/${phoneNumber.replace(/[^0-9]/g, '')}`;
+
   return (
     <section className='py-16 min-h-[100vh] lg:section' id='contact'>
       <div className="container ml-20 mt-20 lg:mx-auto">
@@ -42,19 +46,19 @@ const Contact = () => {
               <MdEmail />
               <div className='flex gap-3'>
                 <a href="mailto:umer.work.96@gmail.com" className="text-accent font-medium tracking-wide">
-                  <img src={GmailIcon} alt="Gmail Icon" className="inline-block w-9 h-9" />
+                  <img src={GmailIcon} alt="Gmail Icon" className="inline-block w-9 h-9 hover:w-11 hover:h-11 transition duration-200 ease-in-out" />
                 </a>
                 <a href="https://www.linkedin.com/in/umer-shehzad/">
-                  <img src={LinkedInIcon} alt="Gmail Icon" className="inline-block w-9 h-9" />
+                  <img src={LinkedInIcon} alt="Gmail Icon" className="inline-block w-9 h-9 hover:w-11 hover:h-11 transition duration-200 ease-in-out" />
                 </a>
               </div>
             </div>
             {/* Phone Number */}
             <div className='flex items-center gap-6'>
               <FaPhoneSquareAlt />
-              <span className='text-accent font-semibold tracking-wide'>
-                +92 315 7858775
-              </span>
+              <a href={whatsappUrl} target='_blank' rel='noopener noreferrer'>
+                <FaWhatsapp className='text-green-500 w-9 h-9 hover:w-11 hover:h-11 transition duration-200 ease-in-out' />
+              </a>
             </div>
           </motion.div>
         </div>
