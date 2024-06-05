@@ -5,6 +5,7 @@ import LittleLemon from '../assets/little-lemon.png';
 import TMS from '../assets/task-management-system.png';
 import GlobalGuide from '../assets/global-guide.png';
 import HumsafarPortfolio from '../assets/humsafar-portfolio.png';
+import ReduxToolkit from '../assets/redux-toolkit.png';
 
 
 export const projects = [
@@ -26,6 +27,13 @@ export const projects = [
         pretitle: 'REACT APP',
         title: 'Task Management System',
         liveLink: 'https://task-managemment-system-react.vercel.app/',
+    },
+    {
+        img: ReduxToolkit,
+        pretitle: 'REACT APP',
+        title: 'Redux Toolkit',
+        githubLink: 'https://github.com/umer-shehzad/React-Redux-Toolkit-Apps',
+        liveLink: 'https://redux-toolkit-practice-react.vercel.app/',
     },
     {
         img: LittleLemon,
