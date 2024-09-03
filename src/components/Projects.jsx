@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { BsArrowLeft, BsArrowRight, BsArrowUpRight } from 'react-icons/bs';
 import { FaSpinner } from 'react-icons/fa';
 import { motion } from 'framer-motion';
@@ -8,6 +8,20 @@ import { projects } from '../constants/ProjectsData';
 const Projects = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const [loading, setLoading] = useState(true);
+
+  // Call preloadImages in useEffect
+  useEffect(() => {
+    const keyImages = projects.map((project) => project.img);
+    preloadImages(keyImages);
+  }, []);
+
+  // Function to preload images
+  const preloadImages = (images) => {
+    images.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  };
 
   const handlePrev = () => {
     if (currentPage > 0) {
