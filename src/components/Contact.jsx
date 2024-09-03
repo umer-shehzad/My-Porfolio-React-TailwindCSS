@@ -46,10 +46,10 @@ const Contact = () => {
               <MdEmail />
               <div className='flex gap-3'>
                 <a href="mailto:umer.work.96@gmail.com" className="text-accent font-medium tracking-wide">
-                  <img src={GmailIcon} alt="Gmail Icon" className="inline-block w-9 h-9 hover:w-11 hover:h-11 transition duration-200 ease-in-out" />
+                  <img src={GmailIcon} alt="Gmail Icon" className="inline-block w-9 h-9" />
                 </a>
                 <a href="https://www.linkedin.com/in/umer-shehzad/">
-                  <img src={LinkedInIcon} alt="Gmail Icon" className="inline-block w-9 h-9 hover:w-11 hover:h-11 transition duration-200 ease-in-out" />
+                  <img src={LinkedInIcon} alt="Gmail Icon" className="inline-block w-9 h-9" />
                 </a>
               </div>
             </div>
@@ -57,7 +57,7 @@ const Contact = () => {
             <div className='flex items-center gap-6'>
               <FaPhoneSquareAlt />
               <a href={whatsappUrl} target='_blank' rel='noopener noreferrer'>
-                <FaWhatsapp className='text-green-500 w-9 h-9 hover:w-11 hover:h-11 transition duration-200 ease-in-out' />
+                <FaWhatsapp className='text-green-500 w-9 h-9' />
               </a>
             </div>
           </motion.div>
